@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/hospital1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+
+.rowindex {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #fff;
+    border: 1px solid black;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.b {
+    margin-left: 50px;
+}
+
+button:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    transition: 0.5s;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: linear-gradient(rgba(0,0,0.3),rgba(0,0,0,0.3)),url(images/skin1.jpg);
+}
+
+.card2 {
+    background-image: url(images/bone.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 20px;
+}
+
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 12px;
+}
+
+.container_acne {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+.sublist {
+    margin-left: 20px;
+}
+
+.cardacne {
+    background-image: url(images/acne.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.disease p {
+    color: #000;
+}
+
+.disease1 {
+    margin-right: 10px;
+}
+
+.disease2{
+    margin-left: 40px;
+}
+
+.cardatopic {
+    background-image: url(images/atopic\ dermatits.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardbasal {
+    background-image: url(images/basal.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardeczema {
+    background-image: url(images/eczema.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardhives {
+    background-image: url(images/hives.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardmelanoma {
+    background-image: url(images/melanoma.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardmolluscum {
+    background-image: url(images/molluscum.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardpsoriasis {
+    background-image: url(images/psoriasis.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardringworm {
+    background-image: url(images/ringworm.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardtinea {
+    background-image: url(images/tinea.jpg);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 40px;
+    margin-left: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+::-webkit-file-upload-button {
+    font-size: 12px;
+    color: white;
+    padding: 12px 0;
+    background-color: rgb(129, 129, 129);
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80px;
+}
+
+::-webkit-file-upload-button:hover {
+    background: transparent;
+    transition: 0.5s;
+    border-color: #fff;
+}
+
+input[type="submit"] {
+    width: 180px;
+    color: #000;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="submit"]:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    transition: 0.5s;
+}
+
+.upload {
+
+    font-size: 16px;
+    padding: 5px 0;
+    background: #fff;
+    width: 240px;
+    color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-right: 45px;
+
+   }
+
+.upload:hover {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+    transition: 0.5s;
+}

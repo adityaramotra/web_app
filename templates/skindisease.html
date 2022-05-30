@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Diseases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .container_acne {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+        }
+
+        video {
+            height: 70vh;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            justify-content: center;
+        }
+
+        button {
+            border-radius: 20px;
+            margin-right: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container_acne">
+            <video></video>
+            <div class="info">
+                <button>Capture</button>
+                <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+                    <input type="file" name="image" class="upload">
+                    <input type="submit" value="Diagnose">
+                </form>
+            </div>
+    </div>
+</body>
+<script>
+
+    // Firstly we will get the webcam
+
+    let video = document.querySelector('video')
+
+    navigator.mediaDevices.getUserMedia({video:true})
+
+    .then((stream) => {
+        video.srcObject = stream
+
+        return video.play()
+    })
+
+    .then(() => {
+        // Button reference
+
+        let button = document.querySelector('button')
+
+        // On click for button
+
+        button.onclick = () => {
+            // Take picture
+
+            takePicture()
+            .then(download)
+        }
+    })
+
+    // Take picture method
+
+    function takePicture() {
+        // Canvas element
+
+        let canvas = document.createElement('canvas')
+
+        let ctx = canvas.getContext('2d')
+
+        canvas.width = video.videoWidth
+        canvas.height = video.videoHeight
+
+        // Draw the video on the canvas
+
+        ctx.drawImage(video, 0, 0)
+
+        // Convert canvas to blob
+
+        return new Promise((res,rej) => {
+            canvas.toBlob(res,"image/jpeg")
+        })
+    }
+
+    // Download function
+
+    function download(blob) {
+        // Anchor tag
+
+        let a = document.createElement('a')
+        a.href = URL.createObjectURL(blob)
+        a.download = "Sample.jpg"
+        document.body.appendChild(a)
+        a.click()
+    }
+
+</script>
+</html>
